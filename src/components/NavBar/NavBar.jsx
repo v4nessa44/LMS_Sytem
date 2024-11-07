@@ -1,26 +1,28 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
-import "./NavBar.css"
+import "./NavBar.css";
 
 const NavBar = () => {
   return (
-    <div className='nav-container'>
-      <div className='logo'>
-        <img src='/assets/Codelogo.png'/>
-      </div>
+    <div className="nav-container">
+      <Link to= "/">
+        <div className="logo">
+          <img src="/assets/Codelogo.png" />
+        </div>
+      </Link>
 
-      <div className='menu-container'>
-        <Link to="/">About Us</Link>
-        <Link to="/about">Courses</Link>
-        <Link to="/about">Students</Link>
-        <Link to="/about">Teacher</Link>
-        <Link to="/about">Contact Us</Link>
-        <Link to="/about">Log In</Link>
-
+      <div className="menu-container">
+        <Link to="/">Home</Link>
+        <Link to="/courses">Courses</Link>
+        <Link to="/about">About Us</Link>
+        
+        <Link to="/login" className="loginBtn">
+          Log In
+        </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;

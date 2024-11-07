@@ -1,0 +1,117 @@
+
+
+.enrollmentContainer {
+  padding: 30px;
+  max-width: 950px;
+  width: 100%;
+  margin: auto;
+}
+
+.enrollmentContainer h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tables */
+.enrollmentTable {
+  background-color: rgb(14, 12, 12);
+  width: 100%;
+  max-width: 100%;
+  border-collapse: separate;
+  border-spacing:0 10px;
+  padding: 20px;
+}
+
+.enrollmentTable thead,
+.enrollmentTabletbody,
+.enrollmentTable tfoot {
+  display: table-header-group;
+ 
+}
+
+.enrollmentTable tr {
+  /* box-shadow: 0 3px 2px red; */
+}
+
+.enrollmentTable th,
+.enrollmentTable td {
+  padding: 14px;
+  line-height: 20px;
+  text-align: left;
+}
+
+.enrollmentTable th {
+  font-weight: 700;
+  font-size: 13px;
+  color: #fff;
+  vertical-align: bottom;
+  padding: 0 14px !important;
+}
+
+.enrollmentTable td {
+  vertical-align: middle;
+  background: #fff; /* default cell background */
+  box-shadow: 0 3px 2px rgba(0, 0, 0, .08);
+  transition: all .2s ease;
+  font-size: 13px;
+  color: #777;
+}
+
+.enrollmentTable td:last-child {
+  border-radius: 0 6px 6px 0;
+}
+
+.enrollmentTable td:first-child {
+  border-radius: 6px 0 0 6px;
+}
+
+.enrollmentTable tr:hover td {
+  background-color: #f7f8fb;
+  color: #444;
+}
+.approveBtn{
+background-color: rgb(94, 190, 94);
+padding: 5px;
+border-radius: 5px;
+width: 80px;
+color: white;
+}
+.rejectBtn{
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+    width: 80px;
+    color: white;
+}
+
+.rejectBtn:hover, 
+.approveBtn:hover{  
+    transform: scale(0.9);
+    transition: ease-in 0.3s;
+}
+
+.quickActions {
+ display: flex;
+ align-items: center;
+ justify-content: flex-end;
+ gap: 3px;
+ padding: 2px;
+}
+
+.quickActions .rejectAll-btn {
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+    width: 90px;
+    color: white;
+
+}
+
+.quickActions .approveAll-btn {
+    background-color: rgb(94, 190, 94);
+    padding: 5px;
+    border-radius: 5px;
+    width: 90px;
+    color: white;
+}

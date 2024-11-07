@@ -1,5 +1,5 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Signup from "./pages/Auth/Signup/Signup";
 import HomePage from "./pages/HomePage/HomePage";
 import Login from "./pages/Auth/Login/Login";
@@ -11,14 +11,17 @@ import AllCourses from "./pages/AllCourses/AllCourses";
 import CourseCard from "./components/CourseCard/CourseCard";
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Foorter";
+import EnrollmentRequests from "./pages/EnrollmentRequest/EnrollmentRequests";
 
 function App() {
+  const path = useLocation();
+
+  console.log(path);
   return (
     <>
       <div className="content">
-        <NavBar />
+        {path.pathname !== "/" && <NavBar />}
         <Routes>
-
           {/* Developed Ones */}
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
@@ -27,13 +30,14 @@ function App() {
           <Route path="/teacher/dashboard" element={<TeacherDashboard />} />
           <Route path="/coursecard" element={<CourseCard />} />
           <Route path="/allcourses" element={<AllCourses />} />
+          <Route path="/enrollmentrequest" element={<EnrollmentRequests />} />
+          <Route path="/teacher/courses" element={<AllCourses />} />
 
           <Route path="/courses" element={<Courses />} />
-          <Route path="/teacher/courses" element={<AllCourses />} />
           <Route path="/" element={<HomePage />} />
         </Routes>
       </div>
-      <Footer />
+      {path.pathname !== "/" && <Footer />}
     </>
   );
 }
