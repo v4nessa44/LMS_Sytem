@@ -28,9 +28,8 @@ function App() {
           <Route path="/forgetPassword" element={<ForgetPassword />} />
           <Route path="/resetpassword" element={<ResetPassword />} />
           <Route path="/teacher/dashboard" element={<TeacherDashboard />} />
-          <Route path="/coursecard" element={<CourseCard />} />
           <Route path="/allcourses" element={<AllCourses />} />
-          <Route path="/enrollmentrequest" element={<EnrollmentRequests />} />
+          <Route path="/enrollment-request" element={<EnrollmentRequests />} />
           <Route path="/teacher/courses" element={<AllCourses />} />
 
           <Route path="/courses" element={<Courses />} />

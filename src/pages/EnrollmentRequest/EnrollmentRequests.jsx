@@ -7,7 +7,7 @@ const EnrollmentRequests = () => {
       <div className="enrollmentContainer">
             <h1>Enrollment Requests</h1>
             <div className="quickActions">
-                <button className="approveAll-btn">Approval All</button>
+                <button className="-">Approval All</button>
                 <button className="rejectAll-btn">Reject All</button>
             </div>
       <table className="enrollmentTable">
