@@ -12,6 +12,7 @@ import CourseCard from "./components/CourseCard/CourseCard";
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Foorter";
 import EnrollmentRequests from "./pages/EnrollmentRequest/EnrollmentRequests";
+import PrivacyPolicy from "./pages/HomePage/privacyPolicy";
 
 function App() {
   const path = useLocation();
@@ -34,6 +35,7 @@ function App() {
 
           <Route path="/courses" element={<Courses />} />
           <Route path="/" element={<HomePage />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
         </Routes>
       </div>
       {path.pathname !== "/" && <Footer />}

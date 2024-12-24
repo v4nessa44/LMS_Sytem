@@ -13,6 +13,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/Button/Button";
 import { Input } from "../../components/Input/Input";
+import { useNavigate } from 'react-router-dom';
 
 export default function LandingPage() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -55,6 +56,17 @@ export default function LandingPage() {
     },
   ];
 
+    const navigate = useNavigate();
+  
+    const getStartedClick = () => {
+      navigate('/login'); // Navigate to the "next" page
+    };
+  
+  
+  const getCourses = () => {
+    navigate('courses');
+  }
+
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
@@ -65,25 +77,25 @@ export default function LandingPage() {
   return (
     <div className="flex flex-col min-h-screen bg-white text-gray-900">
       <div className="nav-container">
-      <Link to= "/">
-        <div className="logo">
-          <img src="/assets/Codelogo.png" />
-        </div>
-      </Link>
-
-      <div className="menu-container">
-        <Link to="/">Home</Link>
-        <Link to="/courses">Courses</Link>
-        <Link to="/about">About Us</Link>
-        
-        <Link to="/login" className="loginBtn">
-          Log In
+        <Link to="/">
+          <div className="logo">
+            <img src="/assets/Codelogo.png" />
+          </div>
         </Link>
+
+        <div className="menu-container">
+          <Link to="/">Home</Link>
+          <Link to="/courses">Courses</Link>
+          <Link to="/about">About Us</Link>
+
+          <Link to="/login" className="loginBtn">
+            Log In
+          </Link>
+        </div>
       </div>
-    </div>
       <main className="flex-1">
-        <section className="w-full py-12 md:py-18 lg:py-24 xl:py-32 bg-gradient-to-b from-white to-indigo-50">
-          <div className="container px-4 md:px-6">
+        <section className="w-full bg-gradient-to-b from-white to-indigo-50 flex justify-center">
+          <div className=" h-[80vh] px-4 md:px-6 flex items-center">
             <div className="flex flex-col items-center space-y-4 text-center">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -105,10 +117,11 @@ export default function LandingPage() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="space-x-4"
               >
-                <Button className="bg-indigo-600 text-white hover:bg-indigo-700">
+                <Button onClick={getStartedClick} className="bg-indigo-600 text-white hover:bg-indigo-700">
                   Get Started
                 </Button>
                 <Button
+                  onClick={getCourses}
                   variant="outline"
                   className="border-indigo-600 text-indigo-600 hover:bg-indigo-50"
                 >
@@ -118,8 +131,8 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-indigo-50">
-          <div className="container px-4 md:px-6">
+        <section className="w-full bg-indigo-50">
+          <div className="h-[40vh] px-4 md:px-6 flex items-center">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-12">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -168,8 +181,8 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
-          <div className="container px-4 md:px-6">
+        <section className="w-full bg-white">
+          <div className="h-[80vh] px-4 md:px-6 flex items-center flex-col justify-center ">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8 text-center text-gray-900">
               Popular Courses
             </h2>
@@ -194,9 +207,7 @@ export default function LandingPage() {
                   <h3 className="text-xl font-bold text-gray-900">
                     {course.title}
                   </h3>
-                  <p className="text-sm text-gray-600">
-                    {course.description}
-                  </p>
+                  <p className="text-sm text-gray-600">{course.description}</p>
                   <Button
                     variant="outline"
                     className="border-indigo-600 text-indigo-600 hover:bg-indigo-50"
@@ -208,8 +219,8 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-indigo-50">
-          <div className="container px-4 md:px-6">
+        <section className="w-full  bg-indigo-50">
+          <div className="h-[80vh] px-4 md:px-6 flex items-center flex-col justify-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8 text-center text-gray-900">
               What Our Students Say
             </h2>
@@ -268,8 +279,8 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-t from-white to-indigo-50">
-          <div className="container px-4 md:px-6">
+        <section className="w-full bg-white">
+          <div className="h-[80vh] px-4 md:px-6 flex items-center justify-center">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gray-900">
@@ -315,8 +326,9 @@ export default function LandingPage() {
             Terms of Service
           </Link>
           <Link
+            
             className="text-xs hover:underline underline-offset-4 text-gray-500 hover:text-gray-700"
-            href="#"
+            to="/privacy"
           >
             Privacy
           </Link>
