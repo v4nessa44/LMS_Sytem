@@ -10,6 +10,8 @@
   overflow: hidden;
   cursor: default;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  cursor: pointer;
 }
 
 .courseCard img {
@@ -17,6 +19,11 @@
   height: 150px;
 
   border: 3px solid white;
+}
+
+.courseCard:hover{
+  transition: transform 0.3s ease; /* Smoother transition */
+  transform: scale(0.96);
 }
 
 .courseCard .profile-container {

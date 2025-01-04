@@ -13,6 +13,7 @@ import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Foorter";
 import EnrollmentRequests from "./pages/EnrollmentRequest/EnrollmentRequests";
 import PrivacyPolicy from "./pages/HomePage/privacyPolicy";
+import AboutUs from "./pages/AboutUs/AboutUs";
 
 function App() {
   const path = useLocation();
@@ -29,13 +30,13 @@ function App() {
           <Route path="/forgetPassword" element={<ForgetPassword />} />
           <Route path="/resetpassword" element={<ResetPassword />} />
           <Route path="/teacher/dashboard" element={<TeacherDashboard />} />
-          <Route path="/allcourses" element={<AllCourses />} />
+          <Route path="/courses" element={<AllCourses />} />
           <Route path="/enrollment-request" element={<EnrollmentRequests />} />
           <Route path="/teacher/courses" element={<AllCourses />} />
 
-          <Route path="/courses" element={<Courses />} />
           <Route path="/" element={<HomePage />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/about" element={<AboutUs />} />
         </Routes>
       </div>
       {path.pathname !== "/" && <Footer />}
