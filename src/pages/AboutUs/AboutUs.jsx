@@ -11,22 +11,25 @@ const AboutUs = () => {
               <div className="sec-title">
                 <div className="title">About Us</div>
                 <h2>
-                  We Are The Leader In <br /> The Interiores
+                  We Are The Leader In <br /> The Education system
                 </h2>
               </div>
               <div className="text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries
+                At CodeCircuit, we are dedicated to empowering learners
+                of all ages by providing high-quality, accessible education
+                resources. Our mission is to make learning engaging, effective,
+                and personalized, with a focus on helping students achieve their
+                full potential. Whether you're a student looking to enhance your
+                skills, a teacher seeking innovative tools, or a lifelong
+                learner exploring new topics, we offer a range of courses,
+                tutorials, and materials designed to meet your unique needs.
+                With expert instructors, a collaborative community, and a
+                passion for education, we strive to inspire and support the
+                journey of learning for everyone.
               </div>
-              <div className="email">
-                Request Quote:{" "}
-                <span NclassName="theme_color">freequote@gmail.com</span>
-              </div>
-              <a href="about.html" className="theme-btn btn-style-three">
-                Read More
+             
+              <a href="/Courses" className="theme-btn btn-style-three">
+               Browse Courses
               </a>
             </div>
           </div>
@@ -38,11 +41,11 @@ const AboutUs = () => {
               data-wow-duration="1500ms"
             >
               <div className="image">
-                <img src="https://i.ibb.co/vQbkKj7/about.jpg" />
+                <img src="../assets/education-about-us.jpg" />
                 <div className="overlay-box">
                   <div className="year-box">
-                    <span className="number">5</span>Years <br /> Experience{" "}
-                    <br /> Working
+                    <span className="number">5</span>Years <br /> in E-learning
+                    <br /> Space
                   </div>
                 </div>
               </div>

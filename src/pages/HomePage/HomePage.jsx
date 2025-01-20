@@ -87,6 +87,7 @@ export default function LandingPage() {
           <Link to="/">Home</Link>
           <Link to="/courses">Courses</Link>
           <Link to="/about">About Us</Link>
+          <Link to="/contact">Contact Us</Link>
 
           <Link to="/login" className="loginBtn">
             Log In

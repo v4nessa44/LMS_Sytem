@@ -1,11 +1,24 @@
 import React from "react";
 import "./CourseCard.css";
 import { Rate } from "antd";
+import { StarOutlined, StarFilled } from "@ant-design/icons";
+import { useState } from "react";
 
 const CourseCard = (props) => {
+  const [isStarred, setIsStarred] = useState(false);
+  const handleStarClick = () => { 
+    setIsStarred(!isStarred);
+  };
   return (
     <div className="courseCard">
       <div className="courses">
+        <div className="star-container" onClick={handleStarClick}>
+          {isStarred ? (
+            <StarFilled className="star-icon" />
+          ) : (
+            <StarOutlined className="star-icon" />
+          )}
+        </div>
         <div className="profile-container">
           <img src={props.img} />
         </div>

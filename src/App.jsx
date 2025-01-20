@@ -14,6 +14,11 @@ import Footer from "./components/Footer/Foorter";
 import EnrollmentRequests from "./pages/EnrollmentRequest/EnrollmentRequests";
 import PrivacyPolicy from "./pages/HomePage/privacyPolicy";
 import AboutUs from "./pages/AboutUs/AboutUs";
+import ContactUs from "./pages/ContactUs/ContactUs";
+import CourseDetails from "./pages/CourseDetails/CourseDetails";
+import StudentRequest from "./pages/StudentRequest/StudentRequest";
+import FeedbackForm from "./pages/FeedbackForm/FeedbackForm";
+import CourseCompletion from "./pages/CourseCompletion/CourseCompletion";
 
 function App() {
   const path = useLocation();
@@ -33,10 +38,15 @@ function App() {
           <Route path="/courses" element={<AllCourses />} />
           <Route path="/enrollment-request" element={<EnrollmentRequests />} />
           <Route path="/teacher/courses" element={<AllCourses />} />
-
+          <Route path="/course-detail/:id" element={<CourseDetails />} />
+          <Route path="/student-request" element={<StudentRequest />} />
+          <Route path="/feedback-form" element={<FeedbackForm />} />
+          <Route path="/course-completion" element={<CourseCompletion />} />
+          
           <Route path="/" element={<HomePage />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/contact" element={<ContactUs />} />
         </Routes>
       </div>
       {path.pathname !== "/" && <Footer />}
