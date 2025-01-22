@@ -1,0 +1,15 @@
+
+.cert-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.cert-box img{
+width: 800px;
+height: 800px;
+}

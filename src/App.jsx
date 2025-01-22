@@ -19,6 +19,8 @@ import CourseDetails from "./pages/CourseDetails/CourseDetails";
 import StudentRequest from "./pages/StudentRequest/StudentRequest";
 import FeedbackForm from "./pages/FeedbackForm/FeedbackForm";
 import CourseCompletion from "./pages/CourseCompletion/CourseCompletion";
+import CertificationCompletion from "./pages/Certification/CertificationCompletion";
+import ManageCourse from "./pages/ManageCourses/ManageCourse";
 
 function App() {
   const path = useLocation();
@@ -37,11 +39,12 @@ function App() {
           <Route path="/teacher/dashboard" element={<TeacherDashboard />} />
           <Route path="/courses" element={<AllCourses />} />
           <Route path="/enrollment-request" element={<EnrollmentRequests />} />
-          <Route path="/teacher/courses" element={<AllCourses />} />
           <Route path="/course-detail/:id" element={<CourseDetails />} />
           <Route path="/student-request" element={<StudentRequest />} />
           <Route path="/feedback-form" element={<FeedbackForm />} />
           <Route path="/course-completion" element={<CourseCompletion />} />
+          <Route path="/certification-completion" element={<CertificationCompletion />} />
+          <Route path="/teacher/courses" element={<ManageCourse />} />
           
           <Route path="/" element={<HomePage />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
