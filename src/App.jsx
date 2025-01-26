@@ -45,6 +45,7 @@ function App() {
           <Route path="/course-completion" element={<CourseCompletion />} />
           <Route path="/certification-completion" element={<CertificationCompletion />} />
           <Route path="/teacher/courses" element={<ManageCourse />} />
+         
           
           <Route path="/" element={<HomePage />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />

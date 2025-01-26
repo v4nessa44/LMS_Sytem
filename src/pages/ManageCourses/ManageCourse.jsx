@@ -1,10 +1,11 @@
 import React from 'react'
-import CourseCard from "../../components/CourseCard/CourseCard";
+
 
 
 import Pagination from "../../components/Pagination/pagination";
 
 import "./ManageCourse.css"
+import TeacherCourseCard from '../../components/TeacherCourseCard/TeachercourseCard';
 
 
 
@@ -15,39 +16,40 @@ const ManageCourse = () => {
           <h1>Manage Courses</h1>
          
     
-          <div className="courses">
-            <CourseCard
+          <div className="TeacherCourses">
+            <TeacherCourseCard
           
               title="All Courses"
-              img="https://static.vecteezy.com/system/resources/previews/005/607/204/non_2x/teacher-connects-online-and-streams-her-video-courses-on-the-web-platform-flat-style-cartoon-illustration-free-vector.jpg"
+            img="https://static.vecteezy.com/system/resources/previews/005/607/204/non_2x/teacher-connects-online-and-streams-her-video-courses-on-the-web-platform-flat-style-cartoon-illustration-free-vector.jpg"
+           
             />
     
-            <CourseCard
+            <TeacherCourseCard
               title="All Courses"
               img="https://static.vecteezy.com/system/resources/previews/005/607/204/non_2x/teacher-connects-online-and-streams-her-video-courses-on-the-web-platform-flat-style-cartoon-illustration-free-vector.jpg"
             />
     
-            <CourseCard
+            <TeacherCourseCard
               title="All Courses"
               img="https://static.vecteezy.com/system/resources/previews/005/607/204/non_2x/teacher-connects-online-and-streams-her-video-courses-on-the-web-platform-flat-style-cartoon-illustration-free-vector.jpg"
             />
     
-            <CourseCard
+            <TeacherCourseCard
               title="All Courses"
               img="https://static.vecteezy.com/system/resources/previews/005/607/204/non_2x/teacher-connects-online-and-streams-her-video-courses-on-the-web-platform-flat-style-cartoon-illustration-free-vector.jpg"
             />
     
-            <CourseCard
+            <TeacherCourseCard
               title="All Courses"
               img="https://static.vecteezy.com/system/resources/previews/005/607/204/non_2x/teacher-connects-online-and-streams-her-video-courses-on-the-web-platform-flat-style-cartoon-illustration-free-vector.jpg"
             />
     
-            <CourseCard
+            <TeacherCourseCard
               title="All Courses"
               img="https://static.vecteezy.com/system/resources/previews/005/607/204/non_2x/teacher-connects-online-and-streams-her-video-courses-on-the-web-platform-flat-style-cartoon-illustration-free-vector.jpg"
             />
     
-            <CourseCard
+            <TeacherCourseCard
               title="All Courses"
               img="https://static.vecteezy.com/system/resources/previews/005/607/204/non_2x/teacher-connects-online-and-streams-her-video-courses-on-the-web-platform-flat-style-cartoon-illustration-free-vector.jpg"
             />
