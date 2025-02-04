@@ -21,6 +21,7 @@ import FeedbackForm from "./pages/FeedbackForm/FeedbackForm";
 import CourseCompletion from "./pages/CourseCompletion/CourseCompletion";
 import CertificationCompletion from "./pages/Certification/CertificationCompletion";
 import ManageCourse from "./pages/ManageCourses/ManageCourse";
+import ManagedStudents from "./pages/ManagedStudents/ManagedStudents";
 
 function App() {
   const path = useLocation();
@@ -45,6 +46,7 @@ function App() {
           <Route path="/course-completion" element={<CourseCompletion />} />
           <Route path="/certification-completion" element={<CertificationCompletion />} />
           <Route path="/teacher/courses" element={<ManageCourse />} />
+          <Route path="/managed-students" element={<ManagedStudents/> } />
          
           
           <Route path="/" element={<HomePage />} />

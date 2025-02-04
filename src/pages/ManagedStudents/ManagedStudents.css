@@ -1,0 +1,159 @@
+
+
+.ManageStudentContainer {
+    padding: 30px;
+    max-width: 950px;
+    width: 100%;
+    margin: auto;
+  }
+  
+  .manageStudentContainer h1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: cursive;
+      font-weight:900;
+      font-size: 20px;
+      margin-top: 20px;
+  }
+  
+  /* Tables */
+  .enrollmentTable {
+    background-color: rgb(14, 12, 12);
+    width: 100%;
+    max-width: 100%;
+    border-collapse: separate;
+    border-spacing:0 10px;
+    padding: 20px;
+  }
+  
+  .enrollmentTable thead,
+  .enrollmentTabletbody,
+  .enrollmentTable tfoot {
+    display: table-header-group;
+   
+  }
+  
+  .enrollmentTable tr {
+    /* box-shadow: 0 3px 2px red; */
+  }
+  
+  .enrollmentTable th,
+  .enrollmentTable td {
+    padding: 14px;
+    line-height: 20px;
+    text-align: left;
+  }
+  
+  .enrollmentTable th {
+    font-weight: 700;
+    font-size: 13px;
+    color: #fff;
+    vertical-align: bottom;
+    padding: 0 14px !important;
+  }
+  
+  .enrollmentTable td {
+    vertical-align: middle;
+    background: #fff; /* default cell background */
+    box-shadow: 0 3px 2px rgba(0, 0, 0, .08);
+    transition: all .2s ease;
+    font-size: 13px;
+    color: #777;
+  }
+  
+  .enrollmentTable td:last-child {
+    border-radius: 0 6px 6px 0;
+  }
+  
+  .enrollmentTable td:first-child {
+    border-radius: 6px 0 0 6px;
+  }
+  
+  .enrollmentTable tr:hover td {
+    background-color: #f7f8fb;
+    color: #444;
+  }
+  .sendEmailBtn{
+  background-color: rgb(94, 190, 94);
+  padding: 5px;
+  border-radius: 5px;
+  width: 80px;
+  color: white;
+  }
+  .removeBtn{
+      background-color: red;
+      padding: 5px;
+      border-radius: 5px;
+      width: 80px;
+      color: white;
+  }
+  
+  .sendEmailBtn:hover, 
+  .removeBtn:hover{  
+      transform: scale(0.9);
+      transition: ease-in 0.3s;
+  }
+  
+  .quickActions {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   gap: 3px;
+   padding: 2px;
+  }
+  
+  .quickActions .delete-btn, .edtt-btn
+ {
+      background-color: red;
+      padding: 5px;
+      border-radius: 5px;
+      width: 90px;
+      color: white;
+  
+  }
+
+
+  
+  .quickActions .added-btn {
+      background-color: rgb(94, 190, 94);
+      padding: 5px;
+      border-radius: 5px;
+      width: 90px;
+      color: white;
+  }
+
+  .quickActions button:hover{  
+      transform: scale(0.9);
+      transition: ease-in 0.3s;
+  }
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
