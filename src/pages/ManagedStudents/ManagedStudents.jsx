@@ -58,7 +58,7 @@ const ManagedStudents = () => {
           <div className="modal-content">
             <span className="close-btn" onClick={closeModal}>&times;</span>
             <h2>Send Email</h2>
-            <SendEmail recipient={selectedEmail} />
+            <SendEmail recipient={selectedEmail} onClose={closeModal} />
           </div>
         </div>
       )}

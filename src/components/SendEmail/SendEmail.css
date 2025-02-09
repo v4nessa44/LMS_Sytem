@@ -1,0 +1,90 @@
+/* SendEmail.css */
+
+/* Modal Container Styling */
+.send-email-modal {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Input Fields */
+  .send-email-modal input[name='Subject'],
+  .send-email-modal textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Textarea Specific Styling */
+  .send-email-modal textarea {
+    height: 120px;
+    resize: none;
+  }
+  
+  /* File Input */
+  .send-email-modal input[type="file"] {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  
+  /* Focus Effects */
+  .send-email-modal input[name='Subject']:focus,
+  .send-email-modal textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Send Button */
+  .send-email-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .send-email-button:hover {
+    background-color: #0056b3;
+  }
+
+
+  /* Error Message */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: -5px;
+    text-align: left;
+  }
+  
+  /* Red Border for Error */
+  .input-error {
+    border: 1px solid red;
+    background-color: #ffe6e6;
+  }
+  
+  
+  /* Fade-in animation for modal content */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
